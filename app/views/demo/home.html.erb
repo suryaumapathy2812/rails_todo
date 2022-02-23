@@ -1,0 +1,15 @@
+<h1>Home</h1>
+
+<% name = "Surya Umapathy" %> <%= "The User's name is #{name}"%>
+
+<br />
+
+<% @array.each do |n| %> <%= n %> <% end %>
+
+<div>ID: <%= params['id'] %></div>
+<div>ID: <%= @id %></div>
+<div>page: <%= @page %></div>
+<div>next_page: <%= @page.to_i + 1 %></div>
+
+<%= link_to('index_1', { :controller => "demo", :action => "index" }) %> <%=
+link_to('index_2', '/demo/index') %>

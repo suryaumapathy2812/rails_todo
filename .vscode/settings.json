@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.html.erb": "erb"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "mblode.pretty-formatter"
+    },
+    "editor.formatOnSave": false,
+    "solargraph.autoformat": true,
+    "solargraph.diagnostics": true,
+    "solargraph.formatting": true,
+    "cSpell.words": [
+        "rubocop"
+    ]
+}

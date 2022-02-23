@@ -1,0 +1,27 @@
+<div class="vh-100 container position-relative">
+
+  <h1 class="mt-2 mb-4"> Task App </h1>
+
+  <div class="">
+
+    <ul class="list-group w-100">
+
+
+      <% @task_list.each do |task| %>
+        <!--        <div> <%#=  task.name %> </div>-->
+        <%= render partial:"task/task", locals: { task: task } %>
+
+      <% end %>
+
+
+    </ul>
+
+  </div>
+
+  <div class="fixed-bottom ms-auto mb-4 me-4" style=" width:fit-content; ">
+
+    <%= link_to '+', "/task/create", class: "btn btn-primary" %>
+
+  </div>
+
+</div>
